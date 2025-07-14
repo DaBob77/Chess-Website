@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 90px);
+            grid-template-rows: repeat(8, 90px);
+            border: 3px solid #8B4513;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .square {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .light {
+            background-color: #F0D9B5;
+        }
+        
+        .dark {
+            background-color: #B58863;
+        }
+
+        .piece img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .piece img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="board-container">
+        <div class="coordinates">
+            <div class="chessboard">
+                <!-- Row 8 (Black back rank) -->
+                <div class="square light"><div class="piece"><img src="images/rook_black.png" alt="Black Rook"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/knight_black.png" alt="Black Knight"></div></div>
+                <div class="square light"><div class="piece"><img src="images/bishop_black.png" alt="Black Bishop"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/queen_black.png" alt="Black Queen"></div></div>
+                <div class="square light"><div class="piece"><img src="images/king_black.png" alt="Black King"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/bishop_black.png" alt="Black Bishop"></div></div>
+                <div class="square light"><div class="piece"><img src="images/knight_black.png" alt="Black Knight"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/rook_black.png" alt="Black Rook"></div></div>
+                
+                <!-- Row 7 (Black pawns) -->
+                <div class="square dark"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_black.png" alt="Black Pawn"></div></div>
+                
+                <!-- Row 6 (Empty) -->
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                
+                <!-- Row 5 (Empty) -->
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                
+                <!-- Row 4 (Empty) -->
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                
+                <!-- Row 3 (Empty) -->
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                
+                <!-- Row 2 (White pawns) -->
+                <div class="square light"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square light"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/pawn_white.png" alt="White Pawn"></div></div>
+                
+                <!-- Row 1 (White back rank) -->
+                <div class="square dark"><div class="piece"><img src="images/rook_white.png" alt="White Rook"></div></div>
+                <div class="square light"><div class="piece"><img src="images/knight_white.png" alt="White Knight"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/bishop_white.png" alt="White Bishop"></div></div>
+                <div class="square light"><div class="piece"><img src="images/queen_white.png" alt="White Queen"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/king_white.png" alt="White King"></div></div>
+                <div class="square light"><div class="piece"><img src="images/bishop_white.png" alt="White Bishop"></div></div>
+                <div class="square dark"><div class="piece"><img src="images/knight_white.png" alt="White Knight"></div></div>
+                <div class="square light"><div class="piece"><img src="images/rook_white.png" alt="White Rook"></div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
